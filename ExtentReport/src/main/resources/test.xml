@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="test"><!--线程级别是方法级别；最大兵法线程数2 -->
+
+    <test name="我的测试套件">
+        <classes>
+            <class name="extend.demo.TestDemo"/>
+            <methods>
+                <include name="test1"/>
+                <include name="test2"/>
+                <include name="test3"/>
+            </methods>
+        </classes>
+    </test>
+
+       <listeners>
+           <listener class-name="extend.demo.ExtentTestNGIReporterListener"></listener>
+       </listeners>
+
+</suite>

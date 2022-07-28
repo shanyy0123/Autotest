@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="test" parallel="methods" thread-count="2"><!--线程级别是方法级别；最大兵法线程数2 -->
+
+    <test name="login">
+        <classes>
+          <class name="testng.suit.SuiteConfig"/>
+            <class name="testng.suit.LoginTest"/>
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <!--  <class name="testng.suit.SuiteConfig"> -->
+            <class name="testng.suit.PayTest"/>
+        </classes>
+    </test>
+    <test name="param">
+        <classes>
+            <parameter name="name" value="zhangsan"/>
+            <parameter name="age" value="10"/>
+            <class name="testng.BasicAnnotation"/>
+        </classes>
+    </test>
+    <!--组标签
+    <test name="group">
+        <groups>
+            <run>
+                <include name="stu"/>
+
+            </run>
+        </groups>
+    </test>
+    -->
+
+</suite>
